@@ -1,0 +1,23 @@
+[ 2023-04-16 02:49:24,631 ] 49 root - INFO - data ingestion method started
+[ 2023-04-16 02:49:24,775 ] 58 root - INFO - dataset reading as pandas data frame
+[ 2023-04-16 02:49:25,782 ] 65 root - INFO - initializing train test split
+[ 2023-04-16 02:49:26,798 ] 72 root - INFO - ingestion of data is completed
+[ 2023-04-16 02:49:26,951 ] 112 root - INFO - reading completed for test train data as pandas dataframe
+[ 2023-04-16 02:49:26,955 ] 114 root - INFO - Train dataframe head : 
+        id  carat      cut color clarity  depth  table     x     y     z  price
+0  168192   0.34    Ideal     I    VVS2   60.9   57.0  4.56  4.53  2.76    765
+1   35202   0.90     Good     E     SI1   63.8   57.0  6.07  6.03  3.87   4763
+2   41091   1.02  Premium     G     VS1   62.7   58.0  6.35  6.39  4.00   6139
+[ 2023-04-16 02:49:26,960 ] 115 root - INFO - Test dataframe head : 
+        id  carat        cut color clarity  depth  table     x     y     z  price
+0   70432   0.53    Premium     E     VS2   60.8   56.0  5.24  5.21  3.19   1607
+1   64839   0.71  Very Good     H     SI1   62.9   57.0  5.67  5.69  3.56   2211
+2  185316   0.30      Ideal     H      IF   62.1   57.0  4.27  4.29  2.66    764
+[ 2023-04-16 02:49:26,960 ] 117 root - INFO - obtaining preprocesing object
+[ 2023-04-16 02:49:26,960 ] 58 root - INFO - data transformation initiated
+[ 2023-04-16 02:49:26,960 ] 71 root - INFO - Pipeline Initiated
+[ 2023-04-16 02:49:27,247 ] 151 root - INFO - applying preprocessing object on training and testing dataset
+[ 2023-04-16 02:49:27,257 ] 170 root - INFO - prepossing pickel file object saved successfully
+[ 2023-04-16 02:49:27,261 ] 28 root - INFO - Splitting Dependent and Independent variables from train and test data
+[ 2023-04-16 02:49:28,757 ] 46 root - INFO - Model Report : {'LinearRegression': 0.9368908248567511, 'Lasso': 0.9368940971841704, 'Ridge': 0.9368906732505937, 'Elasticnet': 0.8556494831165181}
+[ 2023-04-16 02:49:28,758 ] 59 root - INFO - Best Model Found , Model Name : Lasso , R2 Score : 93.68940971841704

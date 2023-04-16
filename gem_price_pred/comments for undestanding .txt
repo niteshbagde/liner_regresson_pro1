@@ -1,0 +1,91 @@
+-e . is added for setup.py file 
+
+In a requirements.txt file, the -e option is used to specify a package in "editable" mode. When a package is installed in editable mode, it is installed in such a way that any changes made to the package source code will immediately be reflected in the installed package, without the need to reinstall the package.
+
+The . following the -e option refers to the current directory. So -e . means "install the package in editable mode from the current directory".
+
+Here's an example requirements.txt file that uses the -e option:
+code inside text file- 
+    -e .
+    Flask==2.0.2
+    numpy==1.21.2
+    pandas==1.3.3
+
+In this example, the package in the current directory [the machine learning project that we are workig on] will be installed in editable mode, and the Flask, numpy, and pandas packages will be installed normally.
+
+Note that the requirements.txt file is used by tools like pip to install the necessary packages for a Python project. The -e option is useful during development when you want to make changes to a package and see the changes reflected immediately, without the need to reinstall the package every time you make a change.
+
+
+Here are some commonly used Git commands:
+
+git clone <repository>: clones a remote repository onto your local machine.
+git status: shows the current status of your local repository and any changes made.
+git add <file>: adds changes to a file or directory to the staging area.
+git commit -m "commit message": commits changes in the staging area to the local repository with a descriptive message.
+git push: pushes committed changes from your local repository to the remote repository.
+git pull: pulls changes from the remote repository to your local repository.
+git branch: lists all local branches in the repository.
+git checkout <branch>: switches to a different branch in the repository.
+git merge <branch>: merges a specified branch into the current branch.
+git log: shows the commit history of the repository.
+
+In this case, you'll need to resolve the conflicts before you can successfully push your changes. To do this, you can use a merge tool like Git's built-in git mergetool command or an external merge tool like Beyond Compare, KDiff3, or WinMerge.
+
+Here are the steps you can follow to resolve conflicts:
+
+Run git fetch origin to download the latest changes from the remote repository without merging them.
+Run git diff HEAD..origin/main to view the differences between your local branch and the remote branch.
+Resolve the conflicts by editing the affected files using your preferred merge tool.
+After resolving conflicts, stage your changes using git add . or git add <file name> command.
+Commit your changes using git commit -m "commit message" command.
+Push your changes to the remote repository using git push origin main.
+By following these steps, you should be able to resolve the conflicts and push your changes to the remote repository.
+
+
+
+Docker - 
+
+https://www.youtube.com/watch?v=8vmKtS8W7IQ&t=2309s&pp=ygURa3Jpc2ggbmFpayBkb2NrZXI%3D
+
+https://www.youtube.com/watch?v=vnAN9pmgc2g&t=177s&pp=ygURa3Jpc2ggbmFpayBkb2NrZXI%3D
+
+
+CICD
+https://www.youtube.com/watch?v=Xniji2m85LY&t=1288s
+
+
+
+task sub till 21/4/23
+https://docs.google.com/forms/d/e/1FAIpQLScQ8iWwWbuxmVeq0QPjXKZM2DlQ0Nuc8lLeMWgYJZQQg0otdQ/viewform
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git commands
+echo "# liner_regresson_pro1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/niteshbagde/liner_regresson_pro1.git
+git push -u origin main
+
+
+git remote add origin https://github.com/niteshbagde/liner_regresson_pro1.git
+git branch -M main
+git push -u origin main
+
+
+
+
+

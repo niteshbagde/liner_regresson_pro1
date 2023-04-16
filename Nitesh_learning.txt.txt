@@ -1,0 +1,352 @@
+Folder structure : 
+
+A well-organized folder structure is essential for any machine learning project to ensure that it is easy to understand, navigate and reproduce. Here is a common structure that you can use:
+
+project_name/
+|-- data/
+|   |-- raw/
+|   |-- processed/
+|-- models/
+|   |-- saved_models/
+|-- notebooks/
+|   |-- exploratory_data_analysis.ipynb
+|   |-- data_preprocessing.ipynb
+|   |-- model_training.ipynb
+|-- src/
+|   |-- data/
+|   |   |-- data_loader.py
+|   |   |-- data_processor.py
+|   |-- models/
+|   |   |-- model.py
+|   |-- utils/
+|   |   |-- config.py
+|   |   |-- logger.py
+|-- tests/
+|   |-- test_data_loading.py
+|   |-- test_model_training.py
+|-- README.md
+|-- requirements.txt
+|-- LICENSE
+Explanation:
+
+data: This directory contains the raw and processed data. The raw folder is where the original data files are stored. The processed folder is where the preprocessed data is stored.
+
+models: This directory contains the trained models, as well as any related files such as weights and hyperparameters.
+
+notebooks: This directory contains Jupyter notebooks that document the exploratory data analysis, data preprocessing, model training, and evaluation.
+
+src: This directory contains the source code for the project. The data folder contains data loading and processing modules. The models folder contains the machine learning models. The utils folder contains configuration and logging modules.
+
+tests: This directory contains unit tests for the source code.
+
+README.md: This file is used to provide information about the project, such as how to install and run the code.
+
+requirements.txt: This file lists all the dependencies needed to run the project.
+
+LICENSE: This file contains the license under which the project is released.
+
+Note that this is just one possible folder structure, and you may need to adapt it to suit your specific needs.
+
+
+
+
+Python automation - 
+import os
+
+# Define the project directory name
+project_dir = "project_name"
+
+# Create the project directory if it doesn't exist
+if not os.path.exists(project_dir):
+    os.makedirs(project_dir)
+
+# Define the directory names
+data_dir = os.path.join(project_dir, "data")
+raw_dir = os.path.join(data_dir, "raw")
+processed_dir = os.path.join(data_dir, "processed")
+models_dir = os.path.join(project_dir, "models")
+saved_models_dir = os.path.join(models_dir, "saved_models")
+notebooks_dir = os.path.join(project_dir, "notebooks")
+src_dir = os.path.join(project_dir, "src")
+data_src_dir = os.path.join(src_dir, "data")
+models_src_dir = os.path.join(src_dir, "models")
+utils_src_dir = os.path.join(src_dir, "utils")
+tests_dir = os.path.join(project_dir, "tests")
+
+# Create the directories if they don't exist
+for directory in [data_dir, raw_dir, processed_dir, models_dir, saved_models_dir, notebooks_dir, src_dir, data_src_dir, models_src_dir, utils_src_dir, tests_dir]:
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+# Create a README.md file
+with open(os.path.join(project_dir, "README.md"), "w") as f:
+    f.write("# " + project_dir)
+
+# Create a requirements.txt file
+with open(os.path.join(project_dir, "requirements.txt"), "w") as f:
+    f.write("")
+
+# Create a LICENSE file
+with open(os.path.join(project_dir, "LICENSE"), "w") as f:
+    f.write("")
+
+This code first creates the project directory and then creates all the subdirectories. It also creates empty README.md, requirements.txt, and LICENSE files. You can modify this code to suit your specific needs, such as adding additional subdirectories or modifying the contents of the files.
+
+
+
+
+
+V2 
+
+import os
+
+# Define the project directory name
+project_dir = "project_name"
+
+# Create the project directory if it doesn't exist
+if not os.path.exists(project_dir):
+    os.makedirs(project_dir)
+
+# Define the directory names
+data_dir = os.path.join(project_dir, "data")
+raw_dir = os.path.join(data_dir, "raw")
+processed_dir = os.path.join(data_dir, "processed")
+models_dir = os.path.join(project_dir, "models")
+saved_models_dir = os.path.join(models_dir, "saved_models")
+notebooks_dir = os.path.join(project_dir, "notebooks")
+src_dir = os.path.join(project_dir, "src")
+data_src_dir = os.path.join(src_dir, "data")
+models_src_dir = os.path.join(src_dir, "models")
+utils_src_dir = os.path.join(src_dir, "utils")
+tests_dir = os.path.join(project_dir, "tests")
+
+# Create the directories if they don't exist
+for directory in [data_dir, raw_dir, processed_dir, models_dir, saved_models_dir, notebooks_dir, src_dir, data_src_dir, models_src_dir, utils_src_dir, tests_dir]:
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+# Create a README.md file
+with open(os.path.join(project_dir, "README.md"), "w") as f:
+    f.write("# " + project_dir)
+
+# Create a requirements.txt file
+with open(os.path.join(project_dir, "requirements.txt"), "w") as f:
+    f.write("")
+
+# Create a LICENSE file
+with open(os.path.join(project_dir, "LICENSE"), "w") as f:
+    f.write("")
+
+# Create data loading and processing modules
+data_loader_code = """
+def load_data():
+    # TODO: Implement data loading code
+    pass
+"""
+
+data_processor_code = """
+def preprocess_data(data):
+    # TODO: Implement data preprocessing code
+    pass
+"""
+
+with open(os.path.join(data_src_dir, "data_loader.py"), "w") as f:
+    f.write(data_loader_code)
+
+with open(os.path.join(data_src_dir, "data_processor.py"), "w") as f:
+    f.write(data_processor_code)
+
+# Create a model module
+model_code = """
+import torch.nn as nn
+
+class Model(nn.Module):
+    def __init__(self):
+        super(Model, self).__init__()
+        # TODO: Define the model architecture
+
+    def forward(self, x):
+        # TODO: Define the forward pass
+        pass
+"""
+
+with open(os.path.join(models_src_dir, "model.py"), "w") as f:
+    f.write(model_code)
+
+# Create a configuration module
+config_code = """
+class Config:
+    data_file = "data.csv"
+    batch_size = 32
+    learning_rate = 0.001
+"""
+
+with open(os.path.join(utils_src_dir, "config.py"), "w") as f:
+    f.write(config_code)
+
+# Create a logger module
+logger_code = """
+import logging
+
+def get_logger(name):
+    logger = logging.getLogger(name)
+    logger.setLevel(logging.DEBUG)
+
+    # Create console handler and set level to INFO
+    ch = logging.StreamHandler()
+    ch.setLevel(logging.INFO)
+
+    # Create formatter
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+    # Add formatter to ch
+    ch.setFormatter(formatter)
+
+    # Add ch to logger
+    logger.addHandler(ch)
+
+    return logger
+"""
+
+with open(os.path.join(utils_src_dir, "logger.py"), "w") as f:
+    f.write(logger_code)
+
+Add a test module
+test_code = """
+import unittest
+
+class Test(unittest.TestCase):
+def test_dummy(self):
+self.assertEqual(1, 1)
+
+if name == 'main':
+unittest.main()
+"""
+
+with open(os.path.join(tests_dir, "test.py"), "w") as f:
+f.write(test_code)
+
+print("Project template created successfully!")
+
+
+
+
+folder structure ::::::::::
+
+project_name/
+├── data/
+│   ├── raw/
+│   │   ├── data.csv
+│   ├── processed/
+│   │   ├── data_cleaned.csv
+│   ├── external/
+│   ├── interim/
+│   │   ├── data_preprocessed.pkl
+├── models/
+│   ├── model_1/
+│   │   ├── model.pkl
+│   │   ├── hyperparameters.txt
+│   ├── model_2/
+│   │   ├── model.pkl
+│   │   ├── hyperparameters.txt
+├── notebooks/
+│   ├── exploratory_data_analysis.ipynb
+│   ├── model_training.ipynb
+│   ├── hyperparameter_tuning.ipynb
+│   ├── model_evaluation.ipynb
+├── scripts/
+│   ├── preprocess_data.py
+│   ├── train_model.py
+│   ├── hyperparameter_tuning.py
+│   ├── evaluate_model.py
+├── reports/
+│   ├── project_report.pdf
+├── requirements.txt
+├── README.md
+├── LICENSE
+└── .gitignore
+
+
+
+@echo off
+set "project_name=My_ML_Project"
+set "desktop=%USERPROFILE%\Desktop"
+set "project_folder=%desktop%\%project_name%"
+
+echo Creating project folder: %project_folder%
+mkdir "%project_folder%"
+
+echo Creating data folders...
+mkdir "%project_folder%\data"
+mkdir "%project_folder%\data\raw"
+mkdir "%project_folder%\data\processed"
+mkdir "%project_folder%\data\external"
+mkdir "%project_folder%\data\interim"
+
+echo Creating sample data file...
+copy NUL "%project_folder%\data\raw\data.csv"
+
+echo Creating sample processed data file...
+copy NUL "%project_folder%\data\processed\data_cleaned.csv"
+
+echo Creating sample preprocessed data file...
+copy NUL "%project_folder%\data\interim\data_preprocessed.pkl"
+
+echo Creating models folder...
+mkdir "%project_folder%\models"
+
+echo Creating sample model files...
+mkdir "%project_folder%\models\model_1"
+echo model 1 files > "%project_folder%\models\model_1\model.txt"
+copy NUL "%project_folder%\models\model_1\model.pkl"
+copy NUL "%project_folder%\models\model_1\hyperparameters.txt"
+
+mkdir "%project_folder%\models\model_2"
+echo model 2 files > "%project_folder%\models\model_2\model.txt"
+copy NUL "%project_folder%\models\model_2\model.pkl"
+copy NUL "%project_folder%\models\model_2\hyperparameters.txt"
+
+echo Creating notebooks folder...
+mkdir "%project_folder%\notebooks"
+
+echo Creating sample Jupyter notebooks...
+copy NUL "%project_folder%\notebooks\exploratory_data_analysis.ipynb"
+copy NUL "%project_folder%\notebooks\model_training.ipynb"
+copy NUL "%project_folder%\notebooks\hyperparameter_tuning.ipynb"
+copy NUL "%project_folder%\notebooks\model_evaluation.ipynb"
+
+echo Creating scripts folder...
+mkdir "%project_folder%\scripts"
+
+echo Creating sample Python scripts...
+copy NUL "%project_folder%\scripts\preprocess_data.py"
+copy NUL "%project_folder%\scripts\train_model.py"
+copy NUL "%project_folder%\scripts\hyperparameter_tuning.py"
+copy NUL "%project_folder%\scripts\evaluate_model.py"
+
+echo Creating reports folder...
+mkdir "%project_folder%\reports"
+
+echo Creating sample report file...
+copy NUL "%project_folder%\reports\project_report.pdf"
+
+echo Creating README, LICENSE, and requirements files...
+echo Project README > "%project_folder%\README.md"
+echo Project LICENSE > "%project_folder%\LICENSE"
+echo pandas > "%project_folder%\requirements.txt"
+
+echo Project creation complete.
+pause
+
+
+
+
+
+
+
+
+
+
+
+
+
