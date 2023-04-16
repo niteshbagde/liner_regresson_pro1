@@ -339,6 +339,25 @@ echo Project creation complete.
 pause
 
 
+docker
+https://www.youtube.com/watch?v=4QODgD6wn0U&list=PLxzKY3wu0_FJp2_ZVXZvbQM-Li8kbb0Zc&index=2
+Here are some commonly used Docker commands:
+
+docker build: Build an image from a Dockerfile
+docker run: Run a container from an image
+docker stop: Stop a running container
+docker ps: List all running containers
+docker images: List all available images on the local system
+docker rm: Remove a stopped container
+docker rmi: Remove an image
+docker logs: Show the logs of a container
+docker exec: Run a command in a running container
+docker pull: Pull an image from a registry
+docker push: Push an image to a registry
+docker network: Manage Docker networks
+docker-compose: Define and run multi-container Docker applications
+docker volume: Manage Docker volumes
+docker system: Manage Docker system
 
 
 

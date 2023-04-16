@@ -77,7 +77,10 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/niteshbagde/liner_regresson_pro1.git
+
+# you need to add this 
+git remote add origin https://github.com/niteshbagde/liner_regresson_pro1.git 
+
 git push -u origin main
 
 

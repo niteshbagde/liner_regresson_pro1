@@ -1,0 +1,4 @@
+[ 2023-04-16 21:53:51,176 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2023-04-16 21:53:51,182 ] 224 werkzeug - INFO -  * Debugger PIN: 532-146-883
+[ 2023-04-16 21:53:53,471 ] 85 root - INFO - data gathered . inputs converted to dataframe
+[ 2023-04-16 21:53:53,593 ] 224 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2023 21:53:53] "POST /predict HTTP/1.1" 200 -

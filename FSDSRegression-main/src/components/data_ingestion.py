@@ -49,11 +49,4 @@ class DataIngestion:
             raise CustomException(e,sys)
 
 
-""""
-Test your code like this 
-"""
 
-if __name__ == "__main__":
-    obj = DataIngestion() # craete object of that class
-    
-    train_data, test_data =  obj.initiate_data_ingestion() # get functions output i.e train and test data paths

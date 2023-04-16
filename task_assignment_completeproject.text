@@ -1,0 +1,36 @@
+
+dataset will be available in your resource section
+
+1 you need to perform a detail EDA
+2. you need to a complete feature engineering
+3. train the model
+4. create a complete pipeline with modular coding(training pipeline and prediction pipeline)
+5. you can create one more route in app.py file for the training also
+6. you need to deploy it(aws and azure)
+
+git/github
+docker
+any database you can integrate(optional)
+you can config s3 bucket(optional)
+
+you can take a one week upcoming friday you have to submit
+
+Dataset link:
+https://drive.google.com/file/d/1tr1ozeDCuE9AvoL0D7l00hjfl-k83Yab/view?usp=share_link
+
+
+project submission form-
+https://forms.gle/xxC2QFxHdr66f6MQ8
+
+
+https://github.com/krishnaik06/FSDSRegression
+
+
+
+
+
+https://archive.ics.uci.edu/ml/datasets/Energy+efficiency
+
+
+
+https://archive.ics.uci.edu/ml/datasets/census+income

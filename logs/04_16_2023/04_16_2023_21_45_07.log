@@ -1,0 +1,4 @@
+[ 2023-04-16 21:45:09,523 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2023-04-16 21:45:09,530 ] 224 werkzeug - INFO -  * Debugger PIN: 532-146-883
+[ 2023-04-16 21:45:25,488 ] 224 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2023 21:45:25] "[31m[1mPOST /home HTTP/1.1[0m" 405 -
+[ 2023-04-16 21:45:34,765 ] 224 werkzeug - INFO -  * Detected change in 'd:\\ineuron\\class demo\\Regression project\\gem_price_pred\\app.py', reloading

@@ -1,0 +1,7 @@
+[ 2023-04-16 21:53:05,149 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2023-04-16 21:53:05,157 ] 224 werkzeug - INFO -  * Debugger PIN: 532-146-883
+[ 2023-04-16 21:53:05,977 ] 85 root - INFO - data gathered . inputs converted to dataframe
+[ 2023-04-16 21:53:06,111 ] 224 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2023 21:53:06] "POST /predict HTTP/1.1" 200 -
+[ 2023-04-16 21:53:23,258 ] 85 root - INFO - data gathered . inputs converted to dataframe
+[ 2023-04-16 21:53:23,266 ] 224 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2023 21:53:23] "POST /predict HTTP/1.1" 200 -
+[ 2023-04-16 21:53:48,851 ] 224 werkzeug - INFO -  * Detected change in 'd:\\ineuron\\class demo\\Regression project\\gem_price_pred\\app.py', reloading
